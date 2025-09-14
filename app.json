@@ -2,6 +2,13 @@
   "expo": {
     "name": "meu-tesouro",
     "slug": "meu-tesouro",
-    "version": "1.0.0"
+    "scheme": "meu-tesouro",
+    "version": "1.0.0",
+    "plugins": [
+      "expo-router"
+    ],
+    "android": {
+      "package": "com.anonymous.meutesouro"
+    }
   }
 }

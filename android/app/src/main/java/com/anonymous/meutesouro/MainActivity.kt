@@ -1,4 +1,4 @@
-package com.meutesouro
+package com.anonymous.meutesouro
 
 import android.os.Build
 import android.os.Bundle

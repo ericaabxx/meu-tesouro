@@ -1,4 +1,4 @@
-package com.meutesouro
+package com.anonymous.meutesouro
 
 import android.app.Application
 import android.content.res.Configuration

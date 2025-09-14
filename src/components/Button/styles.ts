@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container:{
-    flex: 1,
+    marginTop: 10,
     justifyContent: "center", // centraliza verticalmente
     alignItems: "center",     // centraliza horizontalmente
   },
 
 button: {
-    width: 340,
+    width: 360,
     height: 50,
-    backgroundColor: "#000",
+    backgroundColor: "#233e89ff",
     borderRadius: 8,
     justifyContent: "center", // centraliza verticalmente
     alignItems: "center",     // centraliza horizontalmente

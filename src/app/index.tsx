@@ -1,6 +1,9 @@
 import { Text, View } from 'react-native'
 import { Header } from '../components/Header'
 import { Carrossel } from "../components/Carrossel"
+import { Button } from '../components/Button'
+import { router } from 'expo-router'
+
 
 export default function Index() {
   return (
@@ -11,23 +14,28 @@ export default function Index() {
       />
     <View 
     style={{flexDirection: "row", justifyContent: "center", gap: 7, marginTop: 10}}>
-      <Carrossel 
+      <Carrossel
       title="Receitas"
       value="R$0,00"
       subtitle="Este mês"
+      bgColor="#E5E5E5"
       />
       <Carrossel 
-      title="Receitas"
+      title="Despesas"
       value="R$0,00"
       subtitle="Este mês"
+      bgColor="#E5E5E5"
       />
       <Carrossel 
-      title="Receitas"
+      title="Saldo"
       value="R$0,00"
       subtitle="Este mês"
+      bgColor="#E5E5E5"
       />
       </View>
-
+      <Button title='Nova transação'
+      onPress={ () => router.navigate("/transactionForm")}
+      />
     </View>
   )
 }

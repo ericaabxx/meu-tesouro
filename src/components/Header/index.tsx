@@ -1,5 +1,6 @@
 import { Text, View, StyleSheet } from "react-native";
 import { styles } from "./styles"
+import { LinearGradient } from "expo-linear-gradient";
 
 export type Props = {
     title: string,
@@ -9,9 +10,15 @@ export type Props = {
 
 export function Header({title, subtitle}: Props){
     return(
-    <View style={styles.container}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subtitle}>{subtitle}</Text>
-    </View>
+   <LinearGradient 
+            colors={['#4c669f', '#3b5998', '#192f6a']} 
+            start={{ x: 0, y: 0 }} 
+            end={{ x: 1, y: 1 }}
+        >
+            <View style={styles.container}>
+                <Text style={styles.title}>{title}</Text>
+                <Text style={styles.subtitle}>{subtitle}</Text>
+            </View>
+        </LinearGradient>
     )
 }

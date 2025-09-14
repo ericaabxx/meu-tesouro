@@ -1,34 +1,34 @@
+// styles.ts
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  
-  carrossel:{
-   flexDirection: "column",
-    backgroundColor: "#000",
+  carrossel: {
+    flex: 1,
+    maxWidth: 115,
+    backgroundColor: "#E5E5E5", // cinza claro
     height: 92,
-    width: 118,
-    borderRadius: 8,
-    gap: 7,
-    
-
+    borderRadius: 12,
+    padding: 12,
+    justifyContent: "center",
   },
-
 
   title: {
     fontSize: 12,
-    fontWeight: 400,
-    color: "#fff"
-  },  
-
-  value:{
-    fontSize: 16,
-    fontWeight: 700,
-    color: "#fff"
+    fontWeight: "500",
+    color: "#000",
   },
-    subtitle: {
-    fontSize: 10,
-    fontWeight: 400,
-    color: "#fff"
-  },  
 
-})
+  value: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#000",
+    marginTop: 4,
+  },
+
+  subtitle: {
+    fontSize: 10,
+    fontWeight: "400",
+    color: "#000",
+    marginTop: 2,
+  },
+});

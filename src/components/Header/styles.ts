@@ -4,11 +4,9 @@ export const styles = StyleSheet.create({
   container:{
     justifyContent: "center", // centraliza verticalmente
     alignItems: "center",     // centraliza horizontalmente
-    backgroundColor: "#000",
     height: 215,
     width: "100%"
   },
-
 
   title: {
     fontSize: 20,

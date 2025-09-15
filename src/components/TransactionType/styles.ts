@@ -4,7 +4,7 @@ import { colors } from '../../theme/colors'
 export const styles = StyleSheet.create({
  form: {
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
  },
  
     container: {

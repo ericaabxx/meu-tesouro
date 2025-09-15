@@ -1,5 +1,6 @@
 // styles.ts
 import { StyleSheet } from "react-native";
+import { fontFamily } from "../../theme";
 
 export const styles = StyleSheet.create({
   carrossel: {
@@ -14,20 +15,20 @@ export const styles = StyleSheet.create({
 
   title: {
     fontSize: 12,
-    fontWeight: "500",
+    fontFamily: fontFamily.medium,
     color: "#000",
   },
 
   value: {
     fontSize: 16,
-    fontWeight: "700",
+    fontFamily: fontFamily.bold,
     color: "#000",
     marginTop: 4,
   },
 
   subtitle: {
     fontSize: 10,
-    fontWeight: "400",
+    fontFamily: fontFamily.regular,
     color: "#000",
     marginTop: 2,
   },

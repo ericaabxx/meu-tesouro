@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Carrossel } from "../components/Carrossel"
 import { Button } from '../components/Button'
 import { router } from 'expo-router'
+import { FormEmpty } from '../components/FormEmpty'
 
 
 export default function Index() {
@@ -36,6 +37,8 @@ export default function Index() {
       <Button title='Nova transação'
       onPress={ () => router.navigate("/transactionForm")}
       />
+
+      <FormEmpty />
     </View>
   )
 }

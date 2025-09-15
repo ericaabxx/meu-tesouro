@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { fontFamily } from "../../theme";
 
 export const styles = StyleSheet.create({
   container:{
@@ -18,7 +19,7 @@ button: {
 
   title: {
     fontSize: 12,
-    fontWeight: 700,
+    fontFamily: fontFamily.bold,
     color: "#fff"
   },  
 })

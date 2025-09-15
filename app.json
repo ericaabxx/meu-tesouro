@@ -5,7 +5,8 @@
     "scheme": "meu-tesouro",
     "version": "1.0.0",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "android": {
       "package": "com.anonymous.meutesouro"

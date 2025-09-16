@@ -11,7 +11,7 @@ type Props = {
 
 export function TransactionType({ selected, onChange }: Props) {
   return (
-    <View style={styles.form}>
+    <View style={{justifyContent: "center", alignItems: "center"}}>
     <View style={styles.container}>
       <Option
         icon="arrow-upward"
@@ -29,5 +29,6 @@ export function TransactionType({ selected, onChange }: Props) {
       />
     </View>
     </View>
-  )
+
+)
 }

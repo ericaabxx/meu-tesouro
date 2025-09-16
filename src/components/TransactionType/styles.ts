@@ -2,15 +2,11 @@ import { StyleSheet } from 'react-native'
 import { colors } from '../../theme/colors' 
 
 export const styles = StyleSheet.create({
- form: {
-    justifyContent: "center",
-    alignItems: "center",
- },
- 
+
     container: {
     height: 40,
-    width: 360,
     flexDirection: 'row',
+    justifyContent: "center",
     backgroundColor: colors.gray[100],
     borderRadius: 8,
     overflow: 'hidden',

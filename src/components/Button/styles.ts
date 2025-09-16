@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
 
 button: {
-    width: 360,
+    width: "100%",
     height: 50,
     backgroundColor: "#233e89ff",
     borderRadius: 8,

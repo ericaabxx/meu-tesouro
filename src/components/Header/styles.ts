@@ -3,10 +3,10 @@ import { fontFamily } from "../../theme";
 
 export const styles = StyleSheet.create({
   container:{
+    width: "100%",
     justifyContent: "center", // centraliza verticalmente
     alignItems: "center",     // centraliza horizontalmente
     height: 215,
-    width: "100%"
   },
 
   title: {

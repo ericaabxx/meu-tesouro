@@ -5,12 +5,11 @@ import { fontFamily } from "../../theme";
 export const styles = StyleSheet.create({
   carrossel: {
     flex: 1,
-    maxWidth: 115,
     backgroundColor: "#E5E5E5", // cinza claro
     height: 92,
     borderRadius: 12,
-    padding: 12,
     justifyContent: "center",
+    padding: 10
   },
 
   title: {

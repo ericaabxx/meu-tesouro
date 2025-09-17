@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { styles } from "./styles";
+import { StyleSheet } from "react-native";
 
 type Props = {
   title: string;
@@ -25,8 +26,8 @@ export function Carrossel({ title, value, subtitle, bgColor = '#fff' }: Props) {
   };
 
   return (
-    <View style={[styles.carrossel, { backgroundColor: bgColor }]}>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+    <View style={[styles.carrossel, { backgroundColor: bgColor },]}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 4, }}>
         <Text style={styles.title}>{title}</Text>
         {renderIcon()}
       </View>

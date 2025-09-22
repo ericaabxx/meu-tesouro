@@ -10,6 +10,7 @@ import { Button } from '../components/Button'
 import { TransactionType } from '../components/TransactionType'
 import { Inputs } from '../components/Inputs'
 import { Description } from '../components/Description'
+import { CategorySelect } from '../components/CategorySelect'
 
 
 
@@ -20,6 +21,7 @@ export default function TransactionForm() {
     const params = useLocalSearchParams<{id: string}>();
 
     const [description, setDescription] = useState("")
+    const [category, setCategory] = useState<string | null>(null)
 
 
 
@@ -36,6 +38,11 @@ export default function TransactionForm() {
         placeholder="Digite a descrição"
         onChangeText={setDescription}
       />
+       <CategorySelect
+      label="Categoria Principal"
+      value={category}
+      onChange={setCategory}
+    />
 
       <Button title='voltar' onPress={()=> router.back()} />
     </View>

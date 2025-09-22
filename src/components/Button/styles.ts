@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
 button: {
     width: "100%",
     height: 50,
-    backgroundColor: "#233e89ff",
+    backgroundColor: "#326BA2",
     borderRadius: 8,
     justifyContent: "center", // centraliza verticalmente
     alignItems: "center",     // centraliza horizontalmente

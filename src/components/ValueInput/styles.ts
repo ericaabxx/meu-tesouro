@@ -5,12 +5,13 @@ import { colors, fontFamily } from "../../theme";
 export const styles = StyleSheet.create({
     container: {
         justifyContent: "center",
+        gap: 5
 
     },
     label: {
         fontSize: 14,
         fontFamily: fontFamily.regular,
-        color: colors.gray[600]
+        color: colors.gray[600],
     },
     input: {
         height: 44,

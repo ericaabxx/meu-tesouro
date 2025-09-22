@@ -2,14 +2,13 @@ import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({
   container: { 
-    flex: 1,
-    justifyContent: "center",
     flexDirection: 'row', 
     gap: 10, 
-    // Adicione esta propriedade para alinhar os itens verticalmente
+    width: "100%",
+    justifyContent: "center",
+    marginBottom: 12, // garante espaçamento entre inputs e descrição
   },
   inputWrapper: {
-    flex: 1,
-    // faz o input ocupar metade do espaço disponível
+    flex: 1, // garante que os dois inputs dividam o espaço igualmente
   }
 })

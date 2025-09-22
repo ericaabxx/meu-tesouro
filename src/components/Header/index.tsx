@@ -11,7 +11,7 @@ export type Props = {
 export function Header({title, subtitle}: Props){
     return(
    <LinearGradient
-            colors={['#4c669f', '#3b5998', '#192f6a']} 
+            colors={['#98CDE4', '#104A8C']} 
             start={{ x: 0, y: 0 }} 
             end={{ x: 1, y: 1 }}
         >

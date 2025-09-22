@@ -9,6 +9,7 @@ import { fontFamily } from '../theme'
 import { Button } from '../components/Button'
 import { TransactionType } from '../components/TransactionType'
 import { Inputs } from '../components/Inputs'
+import { Description } from '../components/Description'
 
 
 
@@ -18,6 +19,9 @@ export default function TransactionForm() {
     const [type, setType] = useState(TransactionTypes.Input);
     const params = useLocalSearchParams<{id: string}>();
 
+    const [description, setDescription] = useState("")
+
+
 
     return (
     <View style={{ flex: 1, padding: 16, gap: 5}}>
@@ -25,6 +29,13 @@ export default function TransactionForm() {
       <Text style={{fontSize: 14, fontFamily: fontFamily.regular, marginTop: 5}}>tipo de transação</Text>
       <TransactionType selected={type} onChange={setType} />
         <Inputs />
+
+      <Description
+        label="Descrição"
+        value={description}
+        placeholder="Digite a descrição"
+        onChangeText={setDescription}
+      />
 
       <Button title='voltar' onPress={()=> router.back()} />
     </View>
